@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #F8FAFC;
+    background-image: url(./image/Background\ Pattern.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-page{
+    background-color: white;
+    width: 25%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: 0px 5px 2px 0px #f4f0f0;
+    margin-top: 15vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-page{
+    background-color: white;
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: 0px 5px 2px 0px #f4f0f0;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+    text-align: center;
+    color: #19bb9d;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 8vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image{
+    border-radius: 50%;
+    background-color: #faf7f7;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 2px 0px #f4f0f0;
+}
+.user-info{
+    font-size: 20px;
+    line-height: 2rem;
+    padding: 10px;
+    margin-left: 20px;
+}
+.welcome-title{
+    font-size: 14px;
+    color:#757575;
+}
+.sign-title{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.label{
+    color: #757575;
+    font-size: 14px;
+    margin-top: 10px;
+}
+input{
+    width:90%;
+    padding: 0 20px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #dedede;  
+}
+button{
+    width:90%;
+    padding: 0 20px;
+    height: 45px;
+    margin-top: 30px;
+    background-color: #625BF7;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.forget-password-title{
+    color: #625BF7;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    Line-height: 15px;
+}
+.no-account-title{
+    text-align: center;
+    margin-top: 40px;
+}
+.no-account-title span{
+    color:#625BF7;
+}
+@media (max-width: 600px) {
+    .login-page {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10vh;
+        background-size: cover;
+    }
+    body{
+        background-size: cover;
+    }
+}
+@media (min-width:600px)and (max-width:768px) {
+    .login-page {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10vh;
+        background-size: cover;
+    }
+    body{
+        background-size: cover;
+    } 
+}
+@media (min-width: 768px) {
+    .login-page {
+        width:30%;
+        margin: 0 auto;
+        margin-top: 10vh; 
+    }
+    body{
+        background-size: cover;
+    }   
 }
